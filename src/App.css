@@ -1,0 +1,22 @@
+body{
+  padding: 20px;
+}
+
+.form_input {
+  border: 1px solid #dbdbdb;
+  outline: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.form_btn{
+  border: none;
+  outline: none;
+  background-color: #1677ff;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
