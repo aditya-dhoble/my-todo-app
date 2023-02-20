@@ -20,8 +20,8 @@ function App() {
     action: ""
   });
 
-  const AddTodo = (e) => {
-    // setFormSubmitted(prev => !prev)
+  const AddTodo = () => {    
+
     const time_stamp = new Date().toLocaleDateString(undefined, {
       hour: '2-digit',
       minute: '2-digit',
@@ -42,7 +42,6 @@ function App() {
     })
 
     console.log("newtodo", newtodo)
-
     setTodos(oldTodos => [...oldTodos, newtodo])
   }
 
@@ -71,7 +70,7 @@ function App() {
   return (
     <div className="App">
       <TodoForm newtodo={newtodo} setNewtodo={setNewtodo} 
-      onClickHandle={toggleFormSubmit} />
+      onClickHandle={() => toggleFormSubmit()} />
       <DataTable todos={todos} handleDelete={handleDelete} isEditing={isEditing} 
       setEditRowKey={setEditRowKey} setTodos={setTodos}/>
       

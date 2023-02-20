@@ -215,9 +215,9 @@ const DataTable = ({todos, handleDelete, isEditing, setEditRowKey, setTodos}) =>
     
   return (
     <div>
-      <Space style={{ marginBottom: 16}}>
+      <Space style={{ marginBottom: 10, marginLeft: 5, marginTop: 4}}>
         <Input placeholder='Search here' type="text" allowClear value={searchText} onChange={handleInputChange}/>
-        <Button type='primary' onClick={globalSearch}>Search</Button>
+        <Button type='primary' onClick={globalSearch} style={{fontSize: 14, fontWeight: 'bold'}}>Search</Button>
       </Space>
       <Form form={form} component={false}>
         <Table 
