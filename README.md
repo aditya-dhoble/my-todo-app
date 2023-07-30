@@ -31,7 +31,7 @@ The interface of the appplication looks as below.
 
 * Sorting - we can sort the entries on basis of the length of the title or more importantly the due date.
 
-* Contraint checks - 
+* Constraint checks - 
     * Before deleting a todo it will ask you whether you really want to delete the item.
     * The due date can only be set up post the day when the todo is created.
 
